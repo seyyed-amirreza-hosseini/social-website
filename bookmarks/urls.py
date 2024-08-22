@@ -25,6 +25,7 @@ urlpatterns = [
     path("account/", include('account.urls')),
     path("social-auth/", include('social_django.urls'), name='social'),
     path("images/", include('images.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
 
 if settings.DEBUG:
